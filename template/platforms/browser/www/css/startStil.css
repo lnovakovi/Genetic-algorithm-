@@ -1,0 +1,33 @@
+#naslov
+{
+  background-color: darkred;
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+h1{
+  color: white;
+  font-size: 150%;
+}
+
+::placeholder
+{
+  color: black;
+  font-family: 'Lucida Sans';
+}
+#str
+{
+  background-color: beige;
+  min-height: 600px;
+  padding: 10px;
+}
+ #rezultati {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr);
+} 
+
+#spremi {
+  height: 50px;
+  justify-self: flex-end;
+  width: 50%;
+}

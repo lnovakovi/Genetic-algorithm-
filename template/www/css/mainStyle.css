@@ -1,0 +1,30 @@
+#mainContainer
+{
+  background-color: beige;
+  height: 100vh; /* CSS3 property, take 100% of screen,Relative to 1% of the height of the viewport* */
+  overflow: hidden;
+  width: 100%;
+}
+#naslov
+{
+  background-color: darkred;
+  color: white;
+  font-size: 30px;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+#btnContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 auto;
+  width: 30%;
+  border-radius: 40%;
+  padding-top: 100px;
+
+}
+
+

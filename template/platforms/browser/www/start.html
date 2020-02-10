@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+        <script type="text/javascript" src="cordova.js"></script>
+        <link rel="stylesheet"href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <!-- Link na CSS stil -->
+        <link href="css/startStil.css" type="text/css" rel="stylesheet" />
+        <script src=https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <!-- Link na JavaScript datoteku -->
+        <script type="text/javascript" src="js/startJS.js"></script>
+        <script type="text/javascript" src="js/population.js"></script>
+        <script type="text/javascript" src="js/DNA.js"></script> 
+        
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Predložak</title>
+    </head>
+    <body>
+        <!-- start stranica-->
+        <div role="header" id="naslov">
+            <h1>Genethic algorithm</h1>
+        </div>     
+        <div role="page" id="str">
+            <label for="fraza">Enter phrase: </label>
+            <input type="text" id ="fraza" placeholder="Without any special charachters...">         
+            <label for="parametar">Enter parameter for mutation:</label>
+            <input type="number" id="parametar" placeholder="Enter number between 0-1...">
+            <label for=brojPopulacije>Enter number of population: </label>
+            <input type="number" id="brojPopulacije" placeholder="Enter number of population...">
+            <button id="kreni">GO!</button>
+        
+            <div role="listview">
+                Target: <span id ="trazeno"></span><br>
+                Best phrase: <span id="najFraza"></span><br>
+                Population: <span id="brojPop"></span><br>
+                Average Fitness: <span id="fitness"></span><br>
+                Total population: <span id="total"></span><br>
+                Mutation rate: <span id="parametarMutacije"></span><br>           
+            </div>
+            <div id="rezultati">
+                <div id="sveFraze">
+                    All phrases: <span id="sve"></span><br>
+                </div>
+                <button id="spremi">SAVE</button>
+            </div>
+        </div>
+    </body>
+</html>
